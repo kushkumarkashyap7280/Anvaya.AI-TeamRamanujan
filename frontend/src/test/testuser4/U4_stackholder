@@ -1,43 +1,44 @@
-
-✅ USER 4 – STAKEHOLDERS (From JSON Only)
-🔴 TIER 1 – INTERNAL DECISION MAKERS
-
-Liam O’Connor
-
-Role: Lead Developer
-
-Belonging: Internal (Engineering)
-
-Eva Müller
-
-Role: CTO
-
-Belonging: Internal (Technology)
-
-Oliver Reed
-
-Role: CFO
-
-Belonging: Internal (Finance)
-
-🟠 TIER 2 – INTERNAL EXECUTION
-
-Sara Kim
-
-Role: Senior Developer
-
-Belonging: Internal (Engineering)
-
-🟡 TIER 3 – EXTERNAL VENDOR
-
-EduSecure Consulting
-
-Role: GDPR Audit Vendor
-
-Belonging: External
-
-Nina Shah
-
-Role: Lead Auditor
-
-Belonging: EduSecure Consulting
+[
+  {
+    "name": "Liam O’Connor",
+    "role": "Lead Developer",
+    "influence": "Tier 1 – Internal Decision Maker",
+    "stance": "Internal (Engineering)",
+    "projectId": "YOUR_PROJECT_ID"
+  },
+  {
+    "name": "Eva Müller",
+    "role": "CTO",
+    "influence": "Tier 1 – Internal Decision Maker",
+    "stance": "Internal (Technology)",
+    "projectId": "YOUR_PROJECT_ID"
+  },
+  {
+    "name": "Oliver Reed",
+    "role": "CFO",
+    "influence": "Tier 1 – Internal Decision Maker",
+    "stance": "Internal (Finance)",
+    "projectId": "YOUR_PROJECT_ID"
+  },
+  {
+    "name": "Sara Kim",
+    "role": "Senior Developer",
+    "influence": "Tier 2 – Internal Execution",
+    "stance": "Internal (Engineering)",
+    "projectId": "YOUR_PROJECT_ID"
+  },
+  {
+    "name": "EduSecure Consulting",
+    "role": "GDPR Audit Vendor",
+    "influence": "Tier 3 – External Vendor",
+    "stance": "External",
+    "projectId": "YOUR_PROJECT_ID"
+  },
+  {
+    "name": "Nina Shah",
+    "role": "Lead Auditor",
+    "influence": "Tier 3 – External Vendor",
+    "stance": "EduSecure Consulting",
+    "projectId": "YOUR_PROJECT_ID"
+  }
+]

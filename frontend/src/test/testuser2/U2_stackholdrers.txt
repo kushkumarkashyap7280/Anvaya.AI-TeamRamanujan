@@ -1,28 +1,60 @@
-📌 Project: FinSafe App Launch
-
-User: Sarah Johnson
-Role: Marketing Lead
-
-🔴 TIER 1 – Internal Decision Makers (Strategic Authority)
-
-Sarah Johnson – Marketing Lead
-
-Alex Chen – CEO
-
-Sarah Jenkins – Lead Auditor (Authorized External Review)
-
-🟠 TIER 2 – Internal Execution & Technical Team
-
-Michael Torres – Engineering
-
-David – Backend Developer
-
-Intern Sam – Intern (Support Role)
-
-🟡 TIER 3 – External Professional Entities
-
-CyberSafe Security Solutions – Security Audit Vendor
-
-Investors / Venture Capitalists (VCs) – Funding Stakeholders
-
-Insurance Providers – Compliance & Risk Coverage (mentioned in proposal context)
+[
+  {
+    "name": "Sarah Johnson",
+    "role": "Marketing Lead",
+    "influence": "Tier 1 – Internal Decision Maker",
+    "stance": "Internal (Marketing Lead / User)",
+    "projectId": "YOUR_PROJECT_ID"
+  },
+  {
+    "name": "Alex Chen",
+    "role": "CEO",
+    "influence": "Tier 1 – Internal Decision Maker",
+    "projectId": "YOUR_PROJECT_ID"
+  },
+  {
+    "name": "Sarah Jenkins",
+    "role": "Lead Auditor",
+    "influence": "Tier 1 – Internal Decision Maker",
+    "stance": "Authorized External Review",
+    "projectId": "YOUR_PROJECT_ID"
+  },
+  {
+    "name": "Michael Torres",
+    "role": "Engineering",
+    "influence": "Tier 2 – Internal Execution & Technical Team",
+    "projectId": "YOUR_PROJECT_ID"
+  },
+  {
+    "name": "David",
+    "role": "Backend Developer",
+    "influence": "Tier 2 – Internal Execution & Technical Team",
+    "projectId": "YOUR_PROJECT_ID"
+  },
+  {
+    "name": "Intern Sam",
+    "role": "Intern",
+    "influence": "Tier 2 – Internal Execution & Technical Team",
+    "stance": "Support Role",
+    "projectId": "YOUR_PROJECT_ID"
+  },
+  {
+    "name": "CyberSafe Security Solutions",
+    "role": "Security Audit Vendor",
+    "influence": "Tier 3 – External Professional Entity",
+    "projectId": "YOUR_PROJECT_ID"
+  },
+  {
+    "name": "Investors / Venture Capitalists (VCs)",
+    "role": "Funding Stakeholders",
+    "influence": "Tier 3 – External Professional Entity",
+    "projectId": "YOUR_PROJECT_ID"
+  },
+  {
+    "name": "Insurance Providers",
+    "role": "Compliance & Risk Coverage",
+    "influence": "Tier 3 – External Professional Entity",
+    "stance": "Mentioned in proposal context",
+    "projectId": "YOUR_PROJECT_ID"
+  }
+]

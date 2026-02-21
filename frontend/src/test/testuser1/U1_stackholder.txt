@@ -1,49 +1,45 @@
-
-🔴 TIER 1 – INTERNAL DECISION MAKERS
-
-
-
-1️⃣ Alex Chen
-
-Role: CEO
-
-Belonging: Internal (Company Leadership)
-
-2️⃣ Maria Santos
-
-Role: CFO
-
-Belonging: Internal (Finance Department)
-
-3️⃣ Rajesh Patel
-
-Role: CTO
-
-Belonging: Internal (Technology Department)
-
-
-🟠 TIER 2 – INTERNAL EXECUTION TEAM
-
-
-4️⃣ James Liu
-
-Role: Senior Developer
-
-Belonging: Internal (Engineering Team)
-
-
-🟡 TIER 3 – EXTERNAL VENDOR
-
-
-5️⃣ CyberSafe Security Solutions
-
-Role: Security Audit Vendor
-
-Belonging: External Vendor
-
-6️⃣ Sarah Jenkins
-
-Role: Lead Auditor
-
-Belonging: CyberSafe Security Solutions (External)
+[
+  {
+    "name": "Alex Chen",
+    "role": "CEO",
+    "influence": "Tier 1 - Internal Decision Maker",
+    "stance": "Internal (Company Leadership)",
+    "projectId": "YOUR_PROJECT_ID"
+  },
+  {
+    "name": "Maria Santos",
+    "role": "CFO",
+    "influence": "Tier 1 - Internal Decision Maker",
+    "stance": "Internal (Finance Department)",
+    "projectId": "YOUR_PROJECT_ID"
+  },
+  {
+    "name": "Rajesh Patel",
+    "role": "CTO",
+    "influence": "Tier 1 - Internal Decision Maker",
+    "stance": "Internal (Technology Department)",
+    "projectId": "YOUR_PROJECT_ID"
+  },
+  {
+    "name": "James Liu",
+    "role": "Senior Developer",
+    "influence": "Tier 2 - Internal Execution Team",
+    "stance": "Internal (Engineering Team)",
+    "projectId": "YOUR_PROJECT_ID"
+  },
+  {
+    "name": "CyberSafe Security Solutions",
+    "role": "Security Audit Vendor",
+    "influence": "Tier 3 - External Vendor",
+    "stance": "External Vendor",
+    "projectId": "YOUR_PROJECT_ID"
+  },
+  {
+    "name": "Sarah Jenkins",
+    "role": "Lead Auditor",
+    "influence": "Tier 3 - External Vendor",
+    "stance": "CyberSafe Security Solutions (External)",
+    "projectId": "YOUR_PROJECT_ID"
+  }
+]
 

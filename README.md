@@ -90,7 +90,7 @@ Anvaya.AI is an end-to-end **AI-powered Business Requirements Document (BRD) gen
 | Framework | Express 4 |
 | ORM | Prisma 5 (MongoDB provider) |
 | Database | MongoDB |
-| AI | Google Gemini (`@google/genai`) |
+| AI | Google Gemini (`@gemini 3 flash-preview`) |
 | Auth | bcrypt · jsonwebtoken |
 | File Uploads | Multer |
 | Validation | Zod |
