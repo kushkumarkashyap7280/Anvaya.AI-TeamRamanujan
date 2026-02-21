@@ -1,29 +1,79 @@
-Stakeholder Hierarchy: Denver-LB Council
-
-TIER 1 – Internal Decision Makers
-
-Speaker 1 / Council President – Internal (City Council)
-
-Councilwoman Ortega – Internal (City Council)
-
-Councilmember Johnson – Internal (City Council)
-
-Councilman Herndon – Internal (City Council)
-
-TIER 2 – Internal Execution
-
-Speaker 3 (Madam Secretary) – Internal (Legislative/Admin)
-
-Speaker 2 (Legal/Clerk) – Internal (City Attorney/Legal)
-
-Speaker 5 (Budget Reviewer) – Internal (Finance/Audit)
-
-Speaker 6 (Zoning Coordinator) – Internal (Planning/Zoning)
-
-TIER 3 – External Entities
-
-Colorado Health Network (CAP) – External (Health Vendor)
-
-Del Norte Neighborhood Dev. – External (Loan Recipient)
-
-Denver Public Schools – External (Community Partner)
+[
+  {
+    "name": "Speaker 1 / Council President",
+    "role": "Council President",
+    "influence": "Tier 1 – Internal Decision Maker",
+    "stance": "Internal (City Council)",
+    "projectId": "YOUR_PROJECT_ID"
+  },
+  {
+    "name": "Councilwoman Ortega",
+    "role": "Council Member",
+    "influence": "Tier 1 – Internal Decision Maker",
+    "stance": "Internal (City Council)",
+    "projectId": "YOUR_PROJECT_ID"
+  },
+  {
+    "name": "Councilmember Johnson",
+    "role": "Council Member",
+    "influence": "Tier 1 – Internal Decision Maker",
+    "stance": "Internal (City Council)",
+    "projectId": "YOUR_PROJECT_ID"
+  },
+  {
+    "name": "Councilman Herndon",
+    "role": "Council Member",
+    "influence": "Tier 1 – Internal Decision Maker",
+    "stance": "Internal (City Council)",
+    "projectId": "YOUR_PROJECT_ID"
+  },
+  {
+    "name": "Speaker 3 (Madam Secretary)",
+    "role": "Secretary",
+    "influence": "Tier 2 – Internal Execution",
+    "stance": "Internal (Legislative/Admin)",
+    "projectId": "YOUR_PROJECT_ID"
+  },
+  {
+    "name": "Speaker 2 (Legal/Clerk)",
+    "role": "Legal/Clerk",
+    "influence": "Tier 2 – Internal Execution",
+    "stance": "Internal (City Attorney/Legal)",
+    "projectId": "YOUR_PROJECT_ID"
+  },
+  {
+    "name": "Speaker 5 (Budget Reviewer)",
+    "role": "Budget Reviewer",
+    "influence": "Tier 2 – Internal Execution",
+    "stance": "Internal (Finance/Audit)",
+    "projectId": "YOUR_PROJECT_ID"
+  },
+  {
+    "name": "Speaker 6 (Zoning Coordinator)",
+    "role": "Zoning Coordinator",
+    "influence": "Tier 2 – Internal Execution",
+    "stance": "Internal (Planning/Zoning)",
+    "projectId": "YOUR_PROJECT_ID"
+  },
+  {
+    "name": "Colorado Health Network (CAP)",
+    "role": "Health Vendor",
+    "influence": "Tier 3 – External Entity",
+    "stance": "External (Health Vendor)",
+    "projectId": "YOUR_PROJECT_ID"
+  },
+  {
+    "name": "Del Norte Neighborhood Dev.",
+    "role": "Loan Recipient",
+    "influence": "Tier 3 – External Entity",
+    "stance": "External (Loan Recipient)",
+    "projectId": "YOUR_PROJECT_ID"
+  },
+  {
+    "name": "Denver Public Schools",
+    "role": "Community Partner",
+    "influence": "Tier 3 – External Entity",
+    "stance": "External (Community Partner)",
+    "projectId": "YOUR_PROJECT_ID"
+  }
+]

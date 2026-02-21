@@ -1,42 +1,44 @@
-USER 5 – STAKEHOLDERS (From JSON Only)
-🔴 TIER 1 – INTERNAL DECISION MAKERS
-
-Sophia Martinez
-
-Role: Product Manager
-
-Belonging: Internal (Product)
-
-Ryan Cooper
-
-Role: CTO
-
-Belonging: Internal (Technology)
-
-Melissa Grant
-
-Role: CFO
-
-Belonging: Internal (Finance)
-
-🟠 TIER 2 – INTERNAL EXECUTION
-
-DevOps Lead
-
-Role: DevOps
-
-Belonging: Internal (Engineering)
-
-🟡 TIER 3 – EXTERNAL VENDOR
-
-SecureLayer Advisory
-
-Role: PCI-DSS Audit Vendor
-
-Belonging: External
-
-Daniel Brooks
-
-Role: Chief Security Auditor
-
-Belonging: SecureLayer Advisory
+[
+  {
+    "name": "Sophia Martinez",
+    "role": "Product Manager",
+    "influence": "Tier 1 – Internal Decision Maker",
+    "stance": "Internal (Product)",
+    "projectId": "YOUR_PROJECT_ID"
+  },
+  {
+    "name": "Ryan Cooper",
+    "role": "CTO",
+    "influence": "Tier 1 – Internal Decision Maker",
+    "stance": "Internal (Technology)",
+    "projectId": "YOUR_PROJECT_ID"
+  },
+  {
+    "name": "Melissa Grant",
+    "role": "CFO",
+    "influence": "Tier 1 – Internal Decision Maker",
+    "stance": "Internal (Finance)",
+    "projectId": "YOUR_PROJECT_ID"
+  },
+  {
+    "name": "DevOps Lead",
+    "role": "DevOps",
+    "influence": "Tier 2 – Internal Execution",
+    "stance": "Internal (Engineering)",
+    "projectId": "YOUR_PROJECT_ID"
+  },
+  {
+    "name": "SecureLayer Advisory",
+    "role": "PCI-DSS Audit Vendor",
+    "influence": "Tier 3 – External Vendor",
+    "stance": "External",
+    "projectId": "YOUR_PROJECT_ID"
+  },
+  {
+    "name": "Daniel Brooks",
+    "role": "Chief Security Auditor",
+    "influence": "Tier 3 – External Vendor",
+    "stance": "SecureLayer Advisory",
+    "projectId": "YOUR_PROJECT_ID"
+  }
+]
