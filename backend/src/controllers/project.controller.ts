@@ -839,13 +839,13 @@ export const generateBRD = async (req: any, res: any, next: any) => {
       TASK: Generate a comprehensive, audit-ready Business Requirements Document (BRD) in Markdown format.
 
       STRICT RULES:
-      1. Every requirement clause MUST cite the source fact ID (e.g., "[Ref: FACT-001]").
+      1. Do NOT include any reference markers like [Ref: FACT-001] or similar citations in the output. The BRD must read as a clean, standalone professional document.
       2. Include ALL verified stakeholders in the Authority Matrix.
-      3. Include a Data Lineage section mapping each BRD clause to original communication sources.
-      4. Format output as clean Markdown with proper headers (# for H1, ## for H2, ### for H3).
-      5. Be professional, forensic, and precise. No hallucinations.
-      6. Use proper Markdown table syntax (| Header | Header |, |---|---|, | cell | cell |) for the Stakeholder Authority Matrix, Data Lineage & Provenance, and any other tabular data. NEVER use dash-lists for tabular data.
-      7. For the Stakeholder Authority Matrix table, include columns: Name, Role, Influence, Stance.
+      3. Format output as clean Markdown with proper headers (# for H1, ## for H2, ### for H3).
+      4. Be professional, forensic, and precise. No hallucinations.
+      5. Use proper Markdown table syntax (| Header | Header |, |---|---|, | cell | cell |) for the Stakeholder Authority Matrix and any other tabular data. NEVER use dash-lists for tabular data.
+      6. For the Stakeholder Authority Matrix table, include columns: Name, Role, Influence, Stance.
+      7. Write requirements naturally, as final polished prose — do not cite internal fact IDs.
 
       PROJECT CONTEXT:
       - Project Name: ${project.projectName}
@@ -855,7 +855,7 @@ export const generateBRD = async (req: any, res: any, next: any) => {
       STAKEHOLDER AUTHORITY MATRIX:
       ${stakeholderList || 'No stakeholders identified'}
 
-      VERIFIED ATOMIC FACTS (GROUNDING SOURCE):
+      VERIFIED ATOMIC FACTS (USE AS GROUNDING — DO NOT CITE IDs IN OUTPUT):
       ${factList || 'No facts available'}
 
       CONFLICT RESOLUTIONS APPLIED:
@@ -864,16 +864,15 @@ export const generateBRD = async (req: any, res: any, next: any) => {
       SUPERSEDED FACTS (Excluded from BRD):
       ${supersededFacts.map(f => typeof f.content === 'string' ? f.content : JSON.stringify(f.content)).join('; ') || 'None'}
 
-      OUTPUT: A complete BRD in Markdown, including sections:
+      OUTPUT: A complete, clean BRD in Markdown, including sections:
       # Business Requirements Document: ${project.projectName}
       ## Executive Summary
       ## Project Scope
       ## Stakeholder Authority Matrix
-      ## Functional Requirements (cite FACT IDs)
+      ## Functional Requirements
       ## Non-Functional Requirements
       ## Compliance & Risk Constraints
       ## Resolved Conflicts Log
-      ## Data Lineage & Provenance
       ## Approval & Sign-Off
     `;
 
@@ -1032,23 +1031,23 @@ export const refineBRD = async (req: any, res: any, next: any) => {
 
     const prompt = `
       SYSTEM ROLE: You are the Anvaya.Ai BRD Refinement Engine.
-      TASK: Refine the existing BRD based on the user's instruction. You MUST retain all data lineage citations (e.g., [Ref: FACT-001]) in your output.
+      TASK: Refine the existing BRD based on the user's instruction.
 
       USER INSTRUCTION: "${userInput}"
 
       CURRENT BRD:
       ${currentBRD}
 
-      VERIFIED FACT GROUNDING (reference these for citations):
+      VERIFIED FACT GROUNDING (use as context only — DO NOT add [Ref: FACT-xxx] citations):
       ${factGrounding}
 
       RULES:
       1. Apply the user's instruction precisely.
-      2. Never remove existing FACT citations — only add more if needed.
+      2. Do NOT include any reference markers like [Ref: FACT-001] in the output. Strip any existing ones. The output must be clean, professional Markdown.
       3. Keep the document in clean Markdown format.
       4. Do not hallucinate new requirements not supported by the fact set.
 
-      OUTPUT: The complete refined BRD in Markdown format only.
+      OUTPUT: The complete refined BRD in clean Markdown format only, no reference markers.
     `;
 
     const result = await ai.models.generateContent({
