@@ -6,6 +6,22 @@ Anvaya.AI is an end-to-end **AI-powered Business Requirements Document (BRD) gen
 
 [For Testing](/TESTUSERS.md)
 
+# Data Source links for Users
+## Meeting Transcripts Dataset (Kaggle)
+🔗 https://www.kaggle.com/datasets/abhishekunnam/meeting-transcripts
+📜 License: Check Kaggle page (community-uploaded)
+
+## AMI Meeting Corpus
+🔗 https://huggingface.co/datasets/knkarthick/AMI (HuggingFace — transcripts + summaries)
+🔗 https://groups.inf.ed.ac.uk/ami/corpus/ (Full corpus)
+📜 License: CC BY 4.0 (Creative Commons Attribution)
+
+
+
+## Documents related to this projects
+
+🔗 https://drive.google.com/drive/folders/1-SmZPnfPi8mN7FN9ddvtBcLDh1Y_R_-3
+
 ---
 
 ## Table of Contents
