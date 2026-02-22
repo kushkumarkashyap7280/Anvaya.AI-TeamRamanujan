@@ -4,6 +4,8 @@
 
 Anvaya.AI is an end-to-end **AI-powered Business Requirements Document (BRD) generation platform**. It ingests raw project artifacts — uploaded files, stakeholder messaging — extracts structured facts, detects and resolves contradictions, and synthesises a polished, reviewable BRD using Google Gemini, all orchestrated through a clean pipeline UI.
 
+[For Testing](/TESTUSERS.md)
+
 ---
 
 ## Table of Contents
